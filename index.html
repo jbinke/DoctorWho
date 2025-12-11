@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jessica Binke">
+    <meta name="description" content="A website dedicated to Doctor Who">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="Doctor Who Website GIT418">
+    <meta property="og:description" content="Doctor Who fanpage created for GIT418">
+
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    
+    <title>Doctor Who</title>
+</head>
+<body class="body">
+    <header>
+        <div class="header-container">
+        <button id="themeSwitch" aria-label="Toggle dark mode">
+                    <img src="images/moon.svg" alt="moon icon">
+                    <img src="images/sun.svg" alt="sun icon">
+                </button>
+                <img src="images/tardissvg.png" alt="tardis icoin" id="tardis">
+            <h1>Doctor Who?</h1>
+        <nav>
+            <ul>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Welcome to the TARDIS</h2>
+        
+        <section id="quotes">
+            <h2>Doctor Who Quotes</h2>
+                <div id="quote-dialog" title="Doctor Who Quotes"></div>
+                <button id="open-quote">Get a random iconic Doctor Who quote</button>
+        </section>
+        <section id="info">
+            <h2>Doctor Who - Who's Who?</h2>
+                <div class="doctors-carousel">
+                    <div class="doctor-slide">
+                        <img src="images/doctors/1.jpg" alt="First Doctor - William Hartnell">
+                        <div class="doctor-info">
+                            <h3>First Doctor</h3>
+                                <p>William Hartnell</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/2.avif" alt="Second Doctor - Patrick Troughton">
+                        <div class="doctor-info">
+                            <h3>Second Doctor</h3>
+                                <p>Patrick Troughton</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/3.jpg" alt="Third Doctor - Jon Pertwee">
+                        <div class="doctor-info">
+                            <h3>Third Doctor</h3>
+                                <p>Jon Pertwee</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/4.jpg" alt="Fourth Doctor - Tom Baker">
+                        <div class="doctor-info">
+                            <h3>Fourth Doctor</h3>
+                                <p>Tom Baker</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/5.webp" alt="Fifth Doctor - Peter Davison">
+                        <div class="doctor-info">
+                            <h3>Fifth Doctor</h3>
+                                <p>Peter Davison</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/6.webp" alt="Sixth Doctor - Colin Baker">
+                        <div class="doctor-info">
+                            <h3>Sixth Doctor</h3>
+                                <p>Colin Baker</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/7.webp" alt="Seventh Doctor - Sylvester McCoy">
+                        <div class="doctor-info">
+                            <h3>Seventh Doctor</h3>
+                                <p>Sylvester McCoy</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/8.webp" alt="Eigth Doctor - Paul McGann">
+                        <div class="doctor-info">
+                            <h3>Eigth Doctor</h3>
+                                <p>Paul McGann</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/WarDoctor.jpg" alt="War Doctor - John Hurt">
+                        <div class="doctor-info">
+                            <h3>War Doctor</h3>
+                                <p>John Hurt</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/9.jpg" alt="Ninth Doctor - Christopher Eccleston">
+                        <div class="doctor-info">
+                            <h3>Ninth Doctor</h3>
+                                <p>Christopher Eccleston</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/10.webp" alt="Tenth Doctor - David Tennant">
+                        <div class="doctor-info">
+                            <h3>Tenth Doctor</h3>
+                                <p>David Tennant</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/11.jpg" alt="Eleventh Doctor - Matt Smith">
+                        <div class="doctor-info">
+                            <h3>Eleventh Doctor</h3>
+                                <p>Matt Smith</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/12.jpg" alt="Twelfth Doctor - Peter Capaldi">
+                        <div class="doctor-info">
+                            <h3>Twelfth Doctor</h3>
+                                <p>Peter Capaldi</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/13.webp" alt="Thirteenth Doctor - Jodie Whittaker">
+                        <div class="doctor-info">
+                            <h3>Thirteenth Doctor</h3>
+                                <p>Jodie Whittaker</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/FugitiveDoctor.webp" alt="Fugitive Doctor - Jo Martin">
+                        <div class="doctor-info">
+                            <h3>Fugtive Doctor</h3>
+                                <p>Jo Martin</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/14.jpg" alt="Fourteenth Doctor - David Tennant">
+                        <div class="doctor-info">
+                            <h3>Fourteenth Doctor</h3>
+                                <p>David Tennant</p>
+                        </div>
+                    </div>
+                    <div class="doctor-slide">
+                        <img src="images/doctors/15.webp" alt="Fifteenth Doctor - Ncuti Gatwa">
+                        <div class="doctor-info">
+                            <h3>Fifteenth Doctor</h3>
+                                <p>Ncuti Gatwa</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+        </section>
+        <section id="media">
+            <h2>Doctor Who Media</h2>
+
+            <div id="media-content"></div>
+        </section>
+    </main>
+        <footer>
+            <p><small>Copyright &copy; 2025 GIT 418 - Jessica Binke</small></p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
